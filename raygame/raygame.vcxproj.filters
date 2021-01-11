@@ -40,5 +40,8 @@
     <ClInclude Include="Sprite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
