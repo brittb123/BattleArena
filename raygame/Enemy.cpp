@@ -56,7 +56,7 @@
 	}
 
 
-	void Enemy::draw() override
+	void Enemy::draw()
 	{
 
 	}

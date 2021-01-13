@@ -57,5 +57,5 @@ public:
 	//this will be getting the sprite and draw and 
 	void draw() override;
 	//this overrides the update from Actor class and changes it in a way that benifits the Enemy, which is mainly updating patrol 
-	void update(float deltaTime) override;
+	void update(float deltaTime) override {};
 };
