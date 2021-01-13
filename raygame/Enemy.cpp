@@ -54,7 +54,7 @@ public:
 		//Find the vector representing the distance between the actor and its target
 		Vector2 direction = target.getLocalPosition - getLocalPosition;
 		//Get the magnitude of the distance vector
-		float distance = direction.Magnitude;
+		float distance = direction.getMagnitude();
 		//Use the inverse cosine to find the angle of the dot product in radians
 		float angle = (float)Math.Acos(MathLibrary::Vector2.DotProduct(getForward, direction.normalized));
 
