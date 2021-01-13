@@ -38,7 +38,7 @@ public:
 	};
 	Enemy(float x, float y, Color rayColor, MathLibrary::Vector2 newPoint, char icon = ' ') 
 	{
-		/*m_alertColor = CLITERAL.RED;*/
+		m_alertColor = CLITERAL(RED);
 		m_newPoint = newPoint;
 		m_currentPoint = newPoint;
 
@@ -52,11 +52,11 @@ public:
 			return false;*/
 
 		//Find the vector representing the distance between the actor and its target
-		Vector2 direction = target.localPosition - localPosition;
+		Vector2 direction = target.getLocalPosition - getLocalPosition;
 		//Get the magnitude of the distance vector
-		float distance = direction.magnitude;
+		float distance = direction.Magnitude;
 		//Use the inverse cosine to find the angle of the dot product in radians
-		float angle = (float)math.Acos(MathLibrary::Vector2.DotProduct(forward, direction.normalized));
+		float angle = (float)Math.Acos(MathLibrary::Vector2.DotProduct(getForward, direction.normalized));
 
 		//Return true if the angle and distance are in range
 		if (angle <= maxAngle && distance <= maxDistance)
