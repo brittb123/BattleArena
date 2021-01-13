@@ -181,6 +181,8 @@ private:
     /// </summary>
     void updateGlobalTransform();
 
+    void getCollisionRadius();
+
 protected:
     MathLibrary::Matrix3* m_globalTransform;
     MathLibrary::Matrix3* m_localTransform;

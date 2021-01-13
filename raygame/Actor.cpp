@@ -232,6 +232,11 @@ bool Actor::checkCollision(Actor* other)
     return distance <= m_collisionRadius + other->m_collisionRadius;
 }
 
+void GetCollisionRadius()
+{
+    return m_collisionRadius;
+}
+
 void Actor::onCollision(Actor* other)
 {
 }

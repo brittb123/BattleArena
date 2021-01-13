@@ -3,6 +3,7 @@
 #include "Player.h"
 
 #include <Vector2.h>
+#include "Actor.h"
 #include <Matrix3.h>
 
 class Player 
@@ -32,9 +33,13 @@ public:
 	// A function that will be called and used for player input and movement of players sprite.
 	void GetPlayerInput();
 
-	bool checkCollision(Player* other);
+	bool checkCollision(Actor* other);
 
 	void OnCollision();
+
+	MathLibrary::Vector2 getWorldPosition();
+
+	void setWorldPosition(MathLibrary::Vector2 value);
 
 
 
@@ -55,5 +60,6 @@ private:
 	float m_soeed;
 	float m_maxspeed;
 	float m_collisionradius;
+	Player* m_parent;
 
 };
