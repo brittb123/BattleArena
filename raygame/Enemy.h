@@ -2,6 +2,7 @@
 
 #include <Vector2.h>
 #include <Matrix3.h>
+#include <math.h>
 
 #include "Actor.h"
 #include "Sprite.h"
